@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-//
+
 import '../model/weather_model.dart';
 
 class WeatherApiClient {
@@ -18,3 +18,4 @@ class WeatherApiClient {
     return weather;
   }
 }
+// VOU ADD UM COMENTARTRIO
