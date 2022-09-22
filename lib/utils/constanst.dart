@@ -1,29 +1,27 @@
+//Esse arquivo eu estou reaproveitando de outros projetos
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 const kTextColor1 = Color.fromARGB(255, 255, 255, 255);
 const kTextColor2 = Color.fromARGB(241, 212, 212, 212);
 
-//
-
-TextStyle kTitleFont = TextStyle(
+TextStyle kTitleFont = const TextStyle(
   fontSize: 30,
   color: Colors.white,
   fontWeight: FontWeight.w300,
 );
-TextStyle kTempFont = TextStyle(
+TextStyle kTempFont = const TextStyle(
   color: Colors.white,
   fontWeight: FontWeight.w500,
   fontSize: 90,
 );
 
-TextStyle kMoreInfoFont = TextStyle(
+TextStyle kMoreInfoFont = const TextStyle(
   color: Colors.white,
   fontSize: 18,
   fontWeight: FontWeight.w400,
 );
-
-//
 
 final w = Get.width;
 final h = Get.height;

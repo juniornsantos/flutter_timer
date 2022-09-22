@@ -1,3 +1,4 @@
+//usando JSON to Dart e fazendo apenas as correcoes 
 class WeatherModel {
   String? cityName;
   double? temp;
@@ -6,7 +7,6 @@ class WeatherModel {
   double? feelsLike;
   String? status;
   String? country;
-  //
   WeatherModel({
     required this.cityName,
     required this.temp,
@@ -16,9 +16,7 @@ class WeatherModel {
     required this.status,
     required this.country,
   });
-
-  //
-
+  
   WeatherModel.fromJson(Map<String, dynamic> json) {
     cityName = json["name"] as String?;
     temp = json["main"]["temp"] as double?;

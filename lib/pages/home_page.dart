@@ -1,11 +1,11 @@
+// inspiração @CodeWithFlexz instagram
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-//
 import '../utils/constanst.dart';
-import '../model/weather_model.dart';
-import '../services/weather_api_client.dart';
-import '../widget/current_weather.dart';
-import '../widget/more_info.dart';
+import '../model/modelo_meteorologico.dart';
+import '../services/API_clima.dart';
+import '../widget/clima_atual.dart';
+import '../widget/mais_informacoes.dart.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,10 +15,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  //
   WeatherApiClient weatherapi = WeatherApiClient();
   WeatherModel? data;
-  //
   Future<void> getData(String? location) async {
     data = await weatherapi.getCurrentWeather(location);
   }
@@ -46,18 +44,11 @@ class _HomePageState extends State<HomePage> {
   }
 
 
-
-
-/////////////////////////////////////
-//@CodeWithFlexz on Instagram
-//
-//AmirBayat0 on Github
-//Programming with Flexz on Youtube
-/////////////////////////////////////
+//--------------------//
   FutureBuilder<void> loadedData() {
     return FutureBuilder(
-      // Zanjan , Toronto, Yakutsk, las vegas, miami
-      future: getData("São miguel"), 
+      // são miguel , Pau dos Ferros, Pereiro
+      future: getData("Rio de Janeiro"), 
       builder: (ctx, snp) {
         if (snp.connectionState == ConnectionState.done) {
           return Column(
