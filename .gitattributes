@@ -1,2 +1,2 @@
-*.Dart linguist-detectable=true
-*.C++ linguist-detectable=false
+*.java linguist-detectable=true
+*.* linguist-detectable=false
